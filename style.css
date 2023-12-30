@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(130, 41, 225);
+    background: linear-gradient(0deg, rgba(130, 41, 225, 1) 14%, rgba(3, 20, 112, 1) 76%);
+    font-family: 'Fuggles', cursive;
+    
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'REM', sans-serif;
+} 
+
+.main {
+    max-width: 90vh;
+    width: 40vw;
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    top: 6%;
+    border-radius: 30px;
+
+}
+
+.title,
+.search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* padding: 18px 20px; */
+    margin: 18px 20px;
+}
+h1{
+    color: #ff5945;
+}
+
+.title img {
+    width: 60px;
+    height: 60px;
+}
+
+.search {
+    background-color: rgba(149, 149, 149, 0.39);
+    margin: 18px 20px;
+    border-radius: 30px;
+    justify-content: space-between;
+    height: 44px;
+    overflow: hidden;
+}
+
+.search input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+#addBtn {
+    width: 120px;
+    height: 100%;
+    background-color: #ff5945;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 800;
+    font-size: medium;
+    border-radius: 30px;
+}
+
+#listItem {
+    margin: 18px 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 18px;
+    user-select: none;
+    cursor: pointer;
+    margin: 20px;
+    position: relative;
+    font-weight: 400;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(To-Do-Img/images/unchecked.png);
+    background-position: center;
+    background-size: cover;
+    top: 10px;
+    left: -20px;
+
+}
+
+.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+.checked::before {
+    content: '';
+    background-image: url(To-Do-Img/images/checked.png);
+}
+
+span {
+    position: absolute;
+    top: 10px;
+    right: -4px;
+    height: 30px;
+    width: 30px;
+    font-size: 23px;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 30px;
+
+}
+
+span:hover {
+    background-color: #b8b8b8;
+    transition: 0.5s ease;
+}
